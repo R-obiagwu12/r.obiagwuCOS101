@@ -1,1 +1,3 @@
-practice_1.rs
+fn main() {
+	println!("Welcome to COS 101");
+}
