@@ -4,18 +4,18 @@ fn main() {
     // Input values for a, b, and c
     println!("Enter the value of a:");
     let mut a_input = String::new();
-    io::stdin().read_line(&mut a_input).unwrap();
-    let a: f64 = a_input.trim().parse().unwrap();
+    io::stdin().read_line(&mut a_input).expect("Faied to read input");
+    let a: f64 = a_input.trim().parse().expect("Faied to read input");
 
     println!("Enter the value of b:");
     let mut b_input = String::new();
-    io::stdin().read_line(&mut b_input).unwrap();
-    let b: f64 = b_input.trim().parse().unwrap();
+    io::stdin().read_line(&mut b_input).expect("Faied to read input");
+    let b: f64 = b_input.trim().parse().expect("Faied to read input");
 
     println!("Enter the value of c:");
     let mut c_input = String::new();
-    io::stdin().read_line(&mut c_input).unwrap();
-    let c: f64 = c_input.trim().parse().unwrap();
+    io::stdin().read_line(&mut c_input).expect("Faied to read input");
+    let c: f64 = c_input.trim().parse().expect("Faied to read input");
 
     // Calculate the discriminant
     let discriminant = b * b - 4.0 * a * c;
