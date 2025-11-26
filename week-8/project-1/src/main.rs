@@ -48,9 +48,7 @@ fn main() {
 
     println!("Enter staff profession:");
     let mut profession = String::new();
-    io::stdin()
-        .read_line(&mut profession)
-        .expect("Failed to read input");
+    io::stdin().read_line(&mut profession).expect("Failed to read input");
     let profession = profession.trim().to_lowercase();
 
     // Validate profession
@@ -61,12 +59,8 @@ fn main() {
 
     println!("Enter years of experience:");
     let mut years = String::new();
-    io::stdin()
-        .read_line(&mut years)
-        .expect("Failed to read input");
-    let years: i32 = years.trim()
-        .parse()
-        .expect("Enter a valid number");
+    io::stdin().read_line(&mut years).expect("Failed to read input");
+    let years: i32 = years.trim().parse().expect("Enter a valid number");
 
     // ----------------------------
     // FIND APS LEVEL USING VECTOR RULES
